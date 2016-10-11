@@ -28,7 +28,6 @@ public class DataSuitWeka {
             bw.write(list[list.length - 1] + "\n");*/
             bw.write(line + ",a,g,e\n");
         }
-
         br.close();
         bw.close();
     }
