@@ -61,7 +61,7 @@ public class WordCountOnNouns {
         for(Object t : resultMap.keySet()){
             Map<String, Double> temp = resultMap.get(t);
             for(Object w : temp.keySet()){
-                sql = "insert into `s_gender_word_count` (`gender`, `word`, `count`) VALUES ('" + t + "', '" + w + "', '" + temp.get(w) + "')";
+                sql = "insert into `s_gender_word_count` (`gender`, `word`, `count`) values ('" + t + "', '" + w + "', '" + temp.get(w) + "')";
                 db.add(sql);
             }
         }
